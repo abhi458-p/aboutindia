@@ -1,0 +1,238 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Slab', serif;
+}
+
+header{
+    width: 100%; height: 100vh;
+
+    background-size: cover;
+}
+
+nav{
+
+    width: 100%; height: 15vh;
+    background-color: rgb(0,0,0,0.2);
+    color: aliceblue; display:flex; justify-content: space-between;
+    align-items: center; text-transform: uppercase;
+}
+
+.logo{
+    width: 25%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.menu{
+    width: 50%;
+    display: flex;justify-content: space-around;
+
+}
+
+.menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url(760289.jpg) ;
+    width: 100%; height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+  background-position: center;
+    animation: chbg 60s linear 0s infinite normal;
+    max-width:100%;
+    height:auto;
+
+    /* animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: linear; 
+    animation-duration: 3s; */
+
+}
+
+@keyframes chbg {
+    0% {
+      background:url('wp1891563-delhi-wallpapers.jpg');
+     background-size:cover;
+     max-width:100%;
+     height:auto;
+
+    }
+    20% {
+      background:url('ujjwal-jajoo-KLFVQgcLoZ8-unsplash.jpg');
+     background-size:cover;
+     max-width:100%;
+     height:auto;
+    }
+    40% {
+      background:url('760289.jpg');
+     background-size:cover;
+     max-width:100%;
+     height:auto;
+    }
+    60% {
+      background:url('a2.jpg');
+      background-size:cover; 
+      max-width:100%;
+      height:auto;
+    }
+    80% {
+      background:url('m1.jpg');
+      background-size:cover;
+
+      max-width:100%;
+      height:auto;
+    }
+    100% {
+      background:url('mountain-girl-JDSCJ_hcnwk-unsplash.jpg');
+    background-size:cover;
+    max-width:100%;
+    height:auto;
+    }
+  }
+  
+
+
+section h3{
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.4rem;
+    text-shadow: 0.1rem 0.1rem 0.2rem black;
+
+}
+
+section h1{
+    margin: 3rem 0 2rem 0;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 0.4rem;
+    text-shadow: 0.2rem 0.1rem 0.5rem black;
+    text-transform: uppercase;
+
+}
+
+section p{
+    font-size: 2.5rem;
+    word-spacing: 0.2rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0.1rem 0.1rem 0.1rem black;
+
+}
+
+section a{
+    padding: 1.2rem 3rem;
+    border-radius: 0.4rem;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    transition: all .5s ease;
+}
+
+.btnone{
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover{
+    background: #00b894;
+    color: white;
+}
+
+.btntwo{
+
+    background: #00b894;
+    color: white;
+}
+
+.btntwo:hover{
+
+    background: #fff;
+    color: #000;
+}
+
+
+.change::after{
+  content: '';
+  animation: changetext 60s linear 0s infinite normal;
+  color: #00b894;
+}
+
+
+@keyframes changetext {
+    0%{
+        content:"New Delhi";
+    }
+
+    20%{
+        content:"Jammu & Kashmir";
+    }
+
+    40%{
+        content:"Agra";
+    }
+
+    60%{
+        content:"Raam Ki Nagri Ayodhya";
+    }
+
+    80%{
+        content:"Mumbai";
+    }
+
+    100%{
+        content:"Shimla";
+    }
+
+}
+
+#clock{
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 25%;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+@media(max-width:998px)
+{
+    html{
+        font-size: 55%;
+    }
+}
+
+
+
+@media(max-width:768px)
+{
+    html{
+        font-size: 45%;
+    }
+}
